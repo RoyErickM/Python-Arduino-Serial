@@ -1,0 +1,59 @@
+void setup() {
+ Serial.begin(9600);
+ pinMode(13,OUTPUT);
+ pinMode(12,OUTPUT);
+ pinMode(11,OUTPUT);
+ pinMode(10,OUTPUT);
+ pinMode(9,OUTPUT);
+ pinMode(8,OUTPUT);
+ pinMode(7,OUTPUT);
+ pinMode(6,OUTPUT);
+ pinMode(5,OUTPUT);
+
+ }
+
+void loop() {
+if (Serial.available()>0){
+char pythondata = Serial.read();
+  switch(pythondata){
+  case'0':funcion_1();break;
+  case'1':funcion_2();break;
+  case'2':funcion_3();break;
+  case'3':funcion_4();break;
+  case'4':funcion_5();break;
+  case'5':funcion_6();break;
+  case'6':funcion_7();break;
+  case'7':funcion_8();break;
+  case'8':funcion_9();break;
+  case'9':funcion_10();break;
+  case'a':funcion_11();break;
+  case'b':funcion_12();break;
+  case'c':funcion_13();break;
+  case'd':funcion_14();break;
+  case'e':funcion_15();break;
+  case'f':funcion_16();break;
+  case'g':funcion_17();break;
+  case'h':funcion_18();break;
+
+  }
+}
+}
+
+void funcion_1(){digitalWrite(13,HIGH);}
+void funcion_2(){digitalWrite(13,LOW);}
+void funcion_3(){digitalWrite(12,HIGH);}
+void funcion_4(){digitalWrite(12,LOW);}
+void funcion_5(){digitalWrite(11,HIGH);}
+void funcion_6(){digitalWrite(11,LOW);}
+void funcion_7(){digitalWrite(10,HIGH);}
+void funcion_8(){digitalWrite(10,LOW);}
+void funcion_9(){digitalWrite(9,HIGH);}
+void funcion_10(){digitalWrite(9,LOW);}
+void funcion_11(){digitalWrite(8,HIGH);}
+void funcion_12(){digitalWrite(8,LOW);}
+void funcion_13(){digitalWrite(7,HIGH);}
+void funcion_14(){digitalWrite(7,LOW);}
+void funcion_15(){digitalWrite(6,HIGH);}
+void funcion_16(){digitalWrite(6,LOW);}
+void funcion_17(){digitalWrite(5,HIGH);}
+void funcion_18(){digitalWrite(5,LOW);}
