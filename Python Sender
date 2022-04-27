@@ -1,0 +1,123 @@
+from tkinter import *
+import serial, time
+arduino = serial.Serial('COM5',9600)
+time.sleep(2)
+ 
+def funcion_1():
+   arduino.write(b'0')
+   arduino.close
+def funcion_2():
+   arduino.write(b'1')
+   arduino.close
+def funcion_3():
+   arduino.write(b'2')
+   arduino.close
+def funcion_4():
+   arduino.write(b'3')
+   arduino.close  
+def funcion_5():
+   arduino.write(b'4')
+   arduino.close
+def funcion_6():
+   arduino.write(b'5')
+   arduino.close
+def funcion_7():
+   arduino.write(b'6')
+   arduino.close
+def funcion_8():
+   arduino.write(b'7')
+   arduino.close     
+def funcion_9():
+   arduino.write(b'8')
+   arduino.close
+def funcion_10():
+   arduino.write(b'9')
+   arduino.close
+def funcion_11():
+   arduino.write(b'a')
+   arduino.close
+def funcion_12():
+   arduino.write(b'b')
+   arduino.close  
+def funcion_13():
+   arduino.write(b'c')
+   arduino.close
+def funcion_14():
+   arduino.write(b'd')
+   arduino.close
+def funcion_15():
+   arduino.write(b'e')
+   arduino.close
+def funcion_16():
+    arduino.write(b'f')
+    arduino.close
+def funcion_17():
+    arduino.write(b'g')
+    arduino.close    
+def funcion_18():
+    arduino.write(b'h')
+    arduino.close        
+
+
+root = Tk()
+root.title("Controlador Arduino")
+root.geometry("1200x600")
+#slider = Scale(root, from_=0, to=255, orient=HORIZONTAL)
+#slider.place(x=200,y=0)
+
+label_1 = Label(root,text ="Puerto 13" )
+label_1.place(x=30,y=10) 
+boton1 = Button(root,text ="Prender Led",command = funcion_1)
+boton1.place(x=110,y=10)
+boton2 = Button(root,text ="Apagar Led",command = funcion_2)
+boton2.place(x=200,y=10)
+label_2 = Label(root,text ="Puerto 12" )
+label_2.place(x=30,y=40) 
+boton3 = Button(root,text ="Prender Led",command = funcion_3)
+boton3.place(x=110,y=40)
+boton4 = Button(root,text ="Apagar Led",command = funcion_4)
+boton4.place(x=200,y=40)
+label_3 = Label(root,text ="Puerto 11" )
+label_3.place(x=30,y=70) 
+boton5 = Button(root,text ="Prender Led",command = funcion_5)
+boton5.place(x=110,y=70)
+boton6 = Button(root,text ="Apagar Led",command = funcion_6)
+boton6.place(x=200,y=70)
+label_3 = Label(root,text ="Puerto 10" )
+label_3.place(x=30,y=100) 
+boton7 = Button(root,text ="Prender Led",command = funcion_7)
+boton7.place(x=110,y=100)
+boton8 = Button(root,text ="Apagar Led",command = funcion_8)
+boton8.place(x=200,y=100)
+label_1 = Label(root,text ="Puerto 9" )
+label_1.place(x=30,y=130) 
+boton1 = Button(root,text ="Prender Led",command = funcion_9)
+boton1.place(x=110,y=130)
+boton2 = Button(root,text ="Apagar Led",command = funcion_10)
+boton2.place(x=200,y=130)
+label_2 = Label(root,text ="Puerto 8" )
+label_2.place(x=30,y=160) 
+boton3 = Button(root,text ="Prender Led",command = funcion_11)
+boton3.place(x=110,y=160)
+boton4 = Button(root,text ="Apagar Led",command = funcion_12)
+boton4.place(x=200,y=160)
+label_3 = Label(root,text ="Puerto 7" )
+label_3.place(x=30,y=190) 
+boton5 = Button(root,text ="Prender Led",command = funcion_13)
+boton5.place(x=110,y=190)
+boton6 = Button(root,text ="Apagar Led",command = funcion_14)
+boton6.place(x=200,y=190)
+label_3 = Label(root,text ="Puerto 6" )
+label_3.place(x=30,y=220) 
+boton7 = Button(root,text ="Prender Led",command = funcion_15)
+boton7.place(x=110,y=220)
+boton8 = Button(root,text ="Apagar Led",command = funcion_16)
+boton8.place(x=200,y=220) 
+label_3 = Label(root,text ="Puerto 5" )
+label_3.place(x=30,y=250) 
+boton7 = Button(root,text ="Prender Led",command = funcion_17)
+boton7.place(x=110,y=250)
+boton8 = Button(root,text ="Apagar Led",command = funcion_18)
+boton8.place(x=200,y=250) 
+ 
+root.mainloop()
